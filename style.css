@@ -84,3 +84,55 @@
     position: sticky;
     top: 0;
 }
+
+/* 
+    ? Display {roperty
+    * treats an element as block or inline
+    * block is created top-bottom, spans full page width
+    * inline is createtd side-by-side, spans width of its content
+*/
+
+.display-container {
+    margin-top: 2em;
+}
+
+.block-container {
+    border: 2px solid black;
+    margin: 5px;
+    /* This will make block element behave as inLine */
+    /* display: inline; */
+}
+
+.inline-element {
+    margin: 5px;
+    /* Makes inline element behave like a block but it doesn't extend its padding full width */
+    /* display: block; */
+}
+
+.inline-block {
+    border: 2px solid black;
+    margin: 5px;
+    /* Allows us to set the width and height of inline */
+    display: inline-block;
+    width: 200px;
+}
+
+/* 
+    ? Float Property
+    * floats element left or right
+*/
+
+.float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    height: 20vw;
+}
+
+.float-box {
+    margin: 5px;
+    border: 2px solid orange;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    float: right;
+}
