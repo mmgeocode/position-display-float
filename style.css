@@ -1,0 +1,86 @@
+/* 
+    CSS Position Properties
+
+    ? Static
+    * default
+    * positioned in relation to elements
+    * top, bottom, left, right, z-index have NO effect
+
+    ? Relative
+    * just like static
+    * can be changed using top, bottom, left, right, z-index
+    * values are relative to its original static position
+
+    ? Absolute
+    * removes the element from the flow
+    * positions it relative to parent container
+    * if parent is static, it will move outside of the parent container
+    * if parent is relative, it will move within the parent container
+    * positioning defined by top, bottom, left, right, z-index
+
+    ? Fixed
+    * like absolute
+    * positioned to viewport
+    * doesn't move when scrolling
+    * positioning defined by top, bottom, left, right, z-index
+
+    ? Sticky
+    * mix of relative and fixed
+    * relative to the flow
+    * position definition used for when you start scrolling
+    * stays fixed when scrolling; relative when stationary
+*/
+
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 75vw;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: relative; */
+
+}
+
+.child {
+    padding: 25px;
+}
+
+.child1 {
+    border: 2px solid red;
+    background-color: red;
+    /* right: 250px; */
+    /* Static -- position properties have no effect on it */
+}
+
+.child2 {
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    position: relative;
+    /* Nothing - acts just like static */
+    /* right: 25px;
+    top: 25px; */
+    /* Shifts top, right values in relation to its original positioning (static) */
+}
+
+.child3 {
+    border: 2px solid green;
+    background-color: green;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.child4 {
+    border: 2px solid teal;
+    background-color: teal;
+    /* position: fixed;
+    top: 0; */
+}
+
+.child5 {
+    border: 2px solid gray;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
